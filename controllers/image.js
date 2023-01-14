@@ -6,7 +6,8 @@ apiKey: '5811f725850a45738d35b52dfbd00b7f'
 });
 
 const handleApiCall = (req,res)=>{
-	   app.models.predict(Clarifai.FACE_DETECTION_MODEL, req.body.input)
+// 	   app.models.predict(Clarifai.FACE_DETECT_MODEL, req.body.input)
+	
 // 	app.models.predict('a403429f2ddf4b49b307e318f00e528b', req.body.input)
 	
 // 	app.models.predict({
@@ -15,6 +16,12 @@ const handleApiCall = (req,res)=>{
 // 	version: "45fb9a671625463fa646c3523a3087d5"
 // 	},
 // 	req.body.input)	
+	
+	app.models.predict( {
+  id: "a403429f2ddf4b49b307e318f00e528b",
+  version: "c0c0ac362b03416da06ab3fa36fb58e3",
+  }, this.state.input  )
+	
       .then(data=>{
       	res.json(data);
       })
