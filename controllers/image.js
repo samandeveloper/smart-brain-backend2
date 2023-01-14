@@ -17,11 +17,20 @@ const handleApiCall = (req,res)=>{
 // 	},
 // 	req.body.input)	
 	
-	app.models.predict( {
-  model_id: "a403429f2ddf4b49b307e318f00e528b",
-  version: "c0c0ac362b03416da06ab3fa36fb58e3",
-//   }, this.state.input  )
-     }, req.body.input  )
+// 	app.models.predict( {
+//   model_id: "a403429f2ddf4b49b307e318f00e528b",
+//   version: "c0c0ac362b03416da06ab3fa36fb58e3",
+//      }, req.body.input  )
+	
+	app.models
+      .predict(
+        {
+          id: 'face-detection',
+          name: 'face-detection',
+          version: "45fb9a671625463fa646c3523a3087d5",
+          type: 'visual-detector',
+        }, req.body.input)
+	
 	
       .then(data=>{
       	res.json(data);
