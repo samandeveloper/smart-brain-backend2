@@ -72,31 +72,31 @@ app.get('/', (req,res)=>{
 
 //signin Endpoint
 app.post('/signin', (req,res)=>{
-	signin.handleSignin(req,res,db,bcrypt),
-		res.send('signin working')
+	signin.handleSignin(req,res,db,bcrypt)
+		
 	});
 
 //register Endpoint
 app.post('/register', (req,res)=>{
-	register.handleRegister(req,res,bcrypt,db),
-		res.send('register working')
+	register.handleRegister(req,res,bcrypt,db)
+		
 });
 
 app.get('/profile/:id', (req,res)=>{
-	profile.handleProfileGet(req,res,db),
-		res.send('id working')
+	profile.handleProfileGet(req,res,db)
+		
 });
 
 //image Endpoint
 app.put('/image', (req,res)=>{
-	image.handleImage(req,res,db),
-		res.send('image working')
+	image.handleImage(req,res,db)
+	
 });
 
 //image security
 app.post('/imageurl',(req,res)=>{
-	image.handleApiCall(req,res),
-		res.send('imageurl working')
+	image.handleApiCall(req,res)
+		
 });
 
 app.listen(process.env.PORT || 3002, ()=>{
