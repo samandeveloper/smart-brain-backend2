@@ -35,10 +35,11 @@ connectionString: 'postgres://smart_brain_data_user:iHR8jLUrAaqkiN6cn6fh5CLmdPwF
 // ssl:true
 	  
 	  
-	  host: 'dpg-cf0ct3kgqg45vesh0480-a',
-	  user:'smart_brain_data_user',
+	  hostname: 'dpg-cf0ct3kgqg45vesh0480-a',
+	  username:'smart_brain_data_user',
 	  password: 'iHR8jLUrAaqkiN6cn6fh5CLmdPwFfGMb',
-	  database: 'smart_brain_data'
+	  database: 'smart_brain_data',
+	  port: 5432
   }
 });
 
