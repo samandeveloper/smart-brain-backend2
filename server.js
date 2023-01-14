@@ -18,14 +18,6 @@ const db = knex({
   client: 'pg',
   connection: {
 	
-//   	connectionString: "postgres://smart_brain_data_user:iHR8jLUrAaqkiN6cn6fh5CLmdPwFfGMb@dpg-cf0ct3kgqg45vesh0480-a/smart_brain_data",
-// 	   // host : 'postgresql-concave-55817',
-//     // user : 'postgres',
-//     // password : '@saman@',
-//     // database : 'smart-brain'
-//   	 ssl: {
-//      rejectUnauthorized: false
-//   }
 connectionString: 'postgres://smart_brain_data_user:iHR8jLUrAaqkiN6cn6fh5CLmdPwFfGMb@dpg-cf0ct3kgqg45vesh0480-a/smart_brain_data',
 // Hostname: 'dpg-cf0ct3kgqg45vesh0480-a',
 // Port: 5432,
