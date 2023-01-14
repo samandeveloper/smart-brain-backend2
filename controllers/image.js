@@ -20,7 +20,8 @@ const handleApiCall = (req,res)=>{
 	app.models.predict( {
   model_id: "a403429f2ddf4b49b307e318f00e528b",
   version: "c0c0ac362b03416da06ab3fa36fb58e3",
-  }, this.state.input  )
+//   }, this.state.input  )
+     }, req.body.input  )
 	
       .then(data=>{
       	res.json(data);
