@@ -71,30 +71,30 @@ app.get('/', (req,res)=>{
 });
 
 //signin Endpoint
-app.post('https://smart-brain-frontend2.onrender.com/signin', (req,res)=>{
+app.post('/signin', (req,res)=>{
 	signin.handleSignin(req,res,db,bcrypt)
 		
 	});
 
 //register Endpoint
-app.post('https://smart-brain-frontend2.onrender.com/register', (req,res)=>{
+app.post('/register', (req,res)=>{
 	register.handleRegister(req,res,bcrypt,db)
 		
 });
 
-app.get('https://smart-brain-frontend2.onrender.com/profile/:id', (req,res)=>{
+app.get('/profile/:id', (req,res)=>{
 	profile.handleProfileGet(req,res,db)
 		
 });
 
 //image Endpoint
-app.put('https://smart-brain-frontend2.onrender.com/image', (req,res)=>{
+app.put('/image', (req,res)=>{
 	image.handleImage(req,res,db)
 	
 });
 
 //image security
-app.post('https://smart-brain-frontend2.onrender.com/imageurl',(req,res)=>{
+app.post('/imageurl',(req,res)=>{
 	image.handleApiCall(req,res)
 		
 });
