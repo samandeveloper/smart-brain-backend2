@@ -33,6 +33,12 @@ connectionString: 'postgres://smart_brain_data_user:iHR8jLUrAaqkiN6cn6fh5CLmdPwF
 // Username: 'smart_brain_data_user',
 // Password: 'iHR8jLUrAaqkiN6cn6fh5CLmdPwFfGMb',
 // ssl:true
+	  
+	  
+	  host: 'postgres://smart_brain_data_user:iHR8jLUrAaqkiN6cn6fh5CLmdPwFfGMb@dpg-cf0ct3kgqg45vesh0480-a/smart_brain_data',
+	  user:'smart_brain_data_user',
+	  password: 'iHR8jLUrAaqkiN6cn6fh5CLmdPwFfGMb',
+	  database: 'smart_brain_data'
   }
 });
 
