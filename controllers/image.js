@@ -18,7 +18,7 @@ const handleApiCall = (req,res)=>{
 // 	req.body.input)	
 	
 	app.models.predict( {
-  id: "a403429f2ddf4b49b307e318f00e528b",
+  model_id: "a403429f2ddf4b49b307e318f00e528b",
   version: "c0c0ac362b03416da06ab3fa36fb58e3",
   }, this.state.input  )
 	
