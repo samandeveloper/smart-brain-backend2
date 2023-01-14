@@ -9,12 +9,12 @@ const handleApiCall = (req,res)=>{
 	   app.models.predict(Clarifai.FACE_DETECT_MODEL, req.body.input)
 // 	app.models.predict('a403429f2ddf4b49b307e318f00e528b', req.body.input)
 	
-	app.models.predict({
-	model_id: "a403429f2ddf4b49b307e318f00e528b",
-//      version: "34ce21a40cc24b6b96ffee54aabff139",
-	version: "45fb9a671625463fa646c3523a3087d5"
-	},
-	req.body.input)	
+// 	app.models.predict({
+// 	model_id: "a403429f2ddf4b49b307e318f00e528b",
+// //      version: "34ce21a40cc24b6b96ffee54aabff139",
+// 	version: "45fb9a671625463fa646c3523a3087d5"
+// 	},
+// 	req.body.input)	
       .then(data=>{
       	res.json(data);
       })
