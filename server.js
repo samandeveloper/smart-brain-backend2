@@ -16,7 +16,7 @@ const path = require('path');
 const db = knex({
   client: 'pg',
   connection: {
-// 	connectionString: 'postgres://smart_brain_data_user:iHR8jLUrAaqkiN6cn6fh5CLmdPwFfGMb@dpg-cf0ct3kgqg45vesh0480-a/smart_brain_data',
+	connectionString: process.env.DATA_URL
   }
 });
 
