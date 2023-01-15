@@ -1,8 +1,7 @@
 //image security
 const Clarifai = require('clarifai');
 const app = new Clarifai.App({
-// apiKey: '5811f725850a45738d35b52dfbd00b7f'
-apiKey: process.env.API_KEY
+	apiKey: process.env.API_KEY
 });
 
 const handleApiCall = (req,res)=>{
