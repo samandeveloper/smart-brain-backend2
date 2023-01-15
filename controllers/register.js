@@ -27,7 +27,6 @@ const handleRegister = (req,res,bcrypt,db)=>{
 	.catch(err=>res.status(400).json('No registration'))
 }
 
-//jadid:
 module.exports={
 	handleRegister:handleRegister
 };
