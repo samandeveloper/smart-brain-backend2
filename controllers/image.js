@@ -8,10 +8,10 @@ const handleApiCall = (req,res)=>{
 	
 app.models.predict(
         {
-          id: 'face-detection',
-          name: 'face-detection',
-          version: "45fb9a671625463fa646c3523a3087d5",
-          type: 'visual-detector',
+          id: process.env.CLARIFAI_ID,
+          name: process.env.CLARIFAI_NAME,
+          version: process.env.CLARIFAI_VERSION,
+          type: process.env.CLARIFAI_TYPE,
         }, req.body.input)
 	
       .then(data=>{
