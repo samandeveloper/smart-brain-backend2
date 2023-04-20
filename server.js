@@ -17,9 +17,9 @@ const db = knex({
   client: 'pg',
   connection: {
 	host: process.env.DATA_URL,
-	user: DATA_USER,
-	password: DATA_PASSWORD,
-	database: DATA_DATABASE
+	user: process.env.DATA_USER,
+	password: process.env.DATA_PASSWORD,
+	database: process.env.DATA_DATABASE
   }
 });
 
