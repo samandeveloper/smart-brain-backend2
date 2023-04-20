@@ -16,7 +16,10 @@ const path = require('path');
 const db = knex({
   client: 'pg',
   connection: {
-	connectionString: process.env.DATA_URL
+	host: process.env.DATA_URL,
+	user: DATA_USER,
+	password: DATA_PASSWORD,
+	database: DATA_DATABASE
   }
 });
 
