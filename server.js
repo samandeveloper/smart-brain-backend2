@@ -15,7 +15,9 @@ const path = require('path');
 
 const db = knex({
   client: 'pg',
-  connection: process.env.DATA_URL,
+  connection: {
+	connectionString: process.env.DATA_URL
+  }
 });
 
 
